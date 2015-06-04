@@ -35,7 +35,8 @@ void SmartEdit::AddPlusButton()
 {
     connect(plusButton, SIGNAL(clicked()), this, SLOT(NewTab()));
     plusButton->setText(" + ");
-    plusButton->setFixedHeight(ui->tabWidget->height());
+    // This does not work with qt4
+//    plusButton->setFixedHeight(ui->tabWidget->height());
 
     ui->tabWidget->addTab(plusTabBar, QString());
     ui->tabWidget->setTabEnabled(ui->tabWidget->count() - 1, false);
