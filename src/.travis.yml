@@ -1,0 +1,9 @@
+language: c++
+
+compiler:
+  - g++
+
+script:
+  - "qmake -project"
+  - "qmake"
+  - "make"
