@@ -4,5 +4,5 @@ compiler:
   - g++
 
 script:
-  - "qmake"
+  - "qmake src/"
   - "make"
