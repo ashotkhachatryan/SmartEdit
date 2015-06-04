@@ -11,14 +11,8 @@ public:
         , m_changed(false)
     { }
 public:
-    void SetPath(QString pStr)
-    {
-        m_path = pStr;
-    }
-    QString GetPath()
-    {
-        return m_path;
-    }
+    void SetPath(QString pStr) { m_path = pStr; }
+    QString GetPath() { return m_path; }
     bool IsChanged() { return m_changed; }
     void SetChangedStatus(bool pChanged) { m_changed = pChanged; }
 
