@@ -1,8 +1,13 @@
 language: c++
-
 compiler:
-  - g++
-
+- g++
 script:
-  - "qmake src/"
-  - "make"
+- qmake src/
+- make
+deploy:
+  provider: releases
+  api_key:
+    secure: iR0iPcVej5gU7AhZyFTgeE1H7KcIcwXnFkc5TO2aNO3gadxfKSKtHQRr4LU2TrUn5+PaFh+t5amiumAxNU9EDx/dgjBe5Gmxw3+k1exMESSKKDdI9JoSmbVEJEYXFPGfTteCoJHyFED4ita5BcsCnBvvLliufXRHD9OkdKqwOxwLSuVYiv2U/nCZanzP7yI3IEkXgnUT0kgyXpOeVcWo9k1KOOmOpynBIFJoKjQpALoTYgWHWYEO8nMCYmPudkbEyGa9JHHDaZFgNo3pdPoaIb1QpkAVXHTgDRrkcubblR/DsI4DFLWyEKn0YtjWkCyprSQfiizKfNuevkVEOZY91uouEISBPa5I5jOoM0th+5hf4J9fT4roCUrLdPIHiGX9dlRhIHAXNkkY6WZMn/32qz6q3cQKeeHUdjm6QWPfl++rm67yvFEA7UGSXPabsZUbkl9YVkMekIyKNOl0ktbZRiLXovoJYb5Xc5eth8C/dEyFgSRLKMaoj0gP5TiX9GWFYq62WBVfRvxrxcqxj87NeOtsH9cUE3lGSvvfBmFH+nanP43WNGOkU03OmNXruNYhUyLT40HkQFM5li4g+o2v0JTQ3R334npw44k/p71g8bIAFu/X3z1P/p5AbJ1gHxutZnlpPlKUu61sA+4DnFMpYffKv4zGkjzo5s8Ze1klba8=
+  file: ''
+  on:
+    repo: ashotkhachatryan/SmartEdit
